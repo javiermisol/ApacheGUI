@@ -1,0 +1,6 @@
+if [ $UID -ne 0 ]; then
+  sudo /etc/ApacheGUI/bin/run.sh
+  exit
+fi
+
+exec /etc/ApacheGUI/bin/run.sh 

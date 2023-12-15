@@ -1,0 +1,6 @@
+if [ $UID -ne 0 ]; then
+  sudo /etc/ApacheGUI/bin/stop.sh
+  exit
+fi
+
+exec /etc/ApacheGUI/bin/stop.sh
